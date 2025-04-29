@@ -25,11 +25,11 @@ const BackgroundAnimation: React.FC = () => {
       if (!playerRef.current) return;
       
       player = new window.YT.Player(playerRef.current, {
-        videoId: 'YOUR_YOUTUBE_VIDEO_ID', // Replace with your YouTube video ID
+        videoId: '6hxjHQk9t4Q', // Replace with your YouTube video ID
         playerVars: {
           autoplay: 1,
           loop: 1,
-          playlist: 'YOUR_YOUTUBE_VIDEO_ID', // Required for looping
+          playlist: '6hxjHQk9t4Q', // Required for looping
           controls: 0,
           showinfo: 0,
           rel: 0,
