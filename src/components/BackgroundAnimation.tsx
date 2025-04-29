@@ -25,11 +25,11 @@ const BackgroundAnimation: React.FC = () => {
       if (!playerRef.current) return;
       
       player = new window.YT.Player(playerRef.current, {
-        videoId: '6hxjHQk9t4Q', // Replace with your YouTube video ID
+        videoId: 'YOUR_YOUTUBE_VIDEO_ID', // Replace with your YouTube video ID
         playerVars: {
           autoplay: 1,
           loop: 1,
-          playlist: '6hxjHQk9t4Q', // Required for looping
+          playlist: 'YOUR_YOUTUBE_VIDEO_ID', // Required for looping
           controls: 0,
           showinfo: 0,
           rel: 0,
@@ -55,29 +55,13 @@ const BackgroundAnimation: React.FC = () => {
 
   return (
     <div 
-      aria-hidden="true" 
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        zIndex: 1,
-        overflow: 'hidden',
-        pointerEvents: 'none', // This makes clicks go through to elements below
-      }}
+      className="background-container" 
+      aria-hidden="true"
     >
       <div 
         ref={playerRef}
         id="background-player"
-        style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          width: '100vw',
-          height: '100vh',
-          transform: 'translate(-50%, -50%) scale(1.5)', // Scale up to cover
-        }}
+        className="video-container"
       />
     </div>
   );
