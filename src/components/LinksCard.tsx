@@ -4,12 +4,12 @@ import Card from './Card';
 
 const LinksCard: React.FC = () => {
   const links = [
-    { name: 'contact/inquiries', href: '#contact' },
-    { name: 'license my artwork(s)', href: '#license' },
-    { name: 'prints', href: '#prints' },
-    { name: 'instagram', href: '#instagram' },
-    { name: 'twitter', href: '#twitter' },
-    { name: 'youtube', href: '#youtube' }
+    { name: 'contact/inquiries', href: 'mailto:info@tandukuda.xyz' },
+    { name: 'license my artwork(s)', href: 'https://artgrab.co/art/tandukuda' },
+    { name: 'prints', href: 'https://www.inprnt.com/gallery/tandukuda/' },
+    { name: 'instagram', href: 'https://www.instagram.com/tandukuda' },
+    { name: 'twitter', href: 'https://x.com/tandukuda' },
+    { name: 'youtube', href: 'https://www.youtube.com/@tandukuda' }
   ];
 
   return (
@@ -20,6 +20,7 @@ const LinksCard: React.FC = () => {
             <a 
               key={link.name} 
               href={link.href}
+              target="_blank"
               style={{ 
                 fontSize: 'clamp(0.9rem, 2vw, 1rem)',
               }}
