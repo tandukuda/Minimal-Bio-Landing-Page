@@ -36,7 +36,7 @@ body {
   border-radius: var(--radius);
   padding: var(--padding-desktop);
   box-shadow: var(--shadow);
-  max-width: 400px;
+  max-width: 600px;
   z-index: 10;
   width: 100%;
 }
