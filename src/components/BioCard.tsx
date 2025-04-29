@@ -4,7 +4,7 @@ import Card from './Card';
 
 const BioCard: React.FC = () => {
   return (
-    <Card>
+    <Card className="bio-card">
       <h1 style={{ 
         fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', 
         marginBottom: '1rem',
