@@ -39,7 +39,7 @@ const Layout: React.FC = () => {
           alignSelf: 'flex-start',
           marginBottom: isMobile ? '24px' : '0',
           width: isMobile ? '100%' : 'auto',
-          maxWidth: isMobile ? '100%' : '400px',
+          // Removed the maxWidth constraint here since it's handled in the CSS
         }}>
           <BioCard />
         </div>
